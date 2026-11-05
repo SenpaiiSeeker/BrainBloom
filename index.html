@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BrainBloom makes learning fun with curious science, student life tips, surprising facts and explanations of our world.">
+<meta name="theme-color" content="#7657c9">
+<title>BrainBloom | Think. Discover. Grow.</title>
+
+<style>
+:root {
+  --purple: #7657c9;
+  --dark: #563b9b;
+  --lavender: #eee8ff;
+  --ink: #302a40;
+  --muted: #686477;
+  --background: #f8f7fc;
+  --white: #ffffff;
+  --border: #e8e3f2;
+  --shadow: 0 10px 28px rgba(54,37,94,.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--background);
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+}
+
+button, input {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #f0a84b;
+  outline-offset: 3px;
+}
+
+/* HEADER */
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  background: white;
+  color: var(--dark);
+  padding: 10px 14px;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255,255,255,.97);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-wrap {
+  max-width: 1120px;
+  margin: auto;
+  padding: 13px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 800;
+  font-size: 1.45rem;
+}
+
+.brand span {
+  margin-right: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #514b61;
+}
+
+nav a:hover {
+  color: var(--purple);
+}
+
+/* HERO */
+
+.hero {
+  background:
+    radial-gradient(circle at 85% 20%, #d9ccff 0, transparent 28%),
+    linear-gradient(135deg, #f1ecff, #fbfaff 65%, #e8f5f1);
+  padding: 82px 22px 76px;
+}
+
+.hero-inner {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: var(--dark);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+h1 {
+  color: #33264f;
+  font-size: clamp(2.5rem, 7vw, 4.7rem);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin: 12px 0 18px;
+  max-width: 700px;
+}
+
+.hero p {
+  max-width: 620px;
+  color: #5f5870;
+  font-size: 1.12rem;
+  margin-bottom: 27px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-block;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 23px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.primary-btn {
+  background: var(--purple);
+  color: white;
+  box-shadow: 0 7px 18px rgba(118,87,201,.22);
+}
+
+.primary-btn:hover {
+  background: var(--dark);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: #f0ebfb;
+  color: var(--dark);
+}
+
+.secondary-btn:hover {
+  background: #e5dcfa;
+}
+
+/* SECTIONS */
+
+.section {
+  max-width: 1120px;
+  margin: auto;
+  padding: 68px 22px;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.7rem,4vw,2.35rem);
+  color: #35294e;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+/* EXPLORE CATEGORIES */
+
+.category-grid,
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 18px;
+}
+
+.category-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 23px 19px;
+  box-shadow: var(--shadow);
+}
+
+.category-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.category-card h3 {
+  font-size: 1.05rem;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.category-card p {
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+/* ARTICLES */
+
+.articles-section {
+  background: #f0edfa;
+}
+
+.articles-inner {
+  max-width: 1120px;
+  margin: auto;
+  padding: 68px 22px;
+}
+
+.search-area {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 22px 0 13px;
+}
+
+.search-area input {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 13px 16px;
+  border: 1px solid #d8d0e8;
+  border-radius: 12px;
+  background: white;
+  color: var(--ink);
+}
+
+.search-area input:focus {
+  outline: 3px solid #d6c9fa;
+  border-color: var(--purple);
+}
+
+.result-count {
+  color: var(--muted);
+  font-size: .92rem;
+  margin-bottom: 18px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #e6e0f0;
+  border-radius: 18px;
+  padding: 22px;
+  min-height: 245px;
+  box-shadow: 0 7px 22px rgba(54,37,94,.06);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.article-badge {
+  align-self: flex-start;
+  background: var(--lavender);
+  color: var(--dark);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .4px;
+  margin-bottom: 13px;
+}
+
+.article-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 9px;
+  color: #35294e;
+}
+
+.article-card p {
+  color: var(--muted);
+  font-size: .92rem;
+  margin-bottom: 18px;
+}
+
+.read-link {
+  color: var(--dark);
+  font-weight: 800;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.read-link:hover {
+  text-decoration: underline;
+}
+
+.no-results {
+  background: white;
+  border: 1px dashed #b8a9d8;
+  border-radius: 14px;
+  padding: 22px;
+  color: var(--muted);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* DAILY CHALLENGE */
+
+.challenge {
+  max-width: 1120px;
+  margin: 68px auto;
+  padding: 0 22px;
+}
+
+.challenge-box {
+  background: linear-gradient(130deg,#5d439f,#8064cc);
+  color: white;
+  padding: 34px;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.challenge-box h2 {
+  font-size: 1.7rem;
+  margin-bottom: 7px;
+}
+
+.challenge-box p {
+  margin-bottom: 17px;
+}
+
+.challenge-box .secondary-btn {
+  background: white;
+  color: var(--dark);
+}
+
+.answer {
+  margin-top: 16px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.15);
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+  background: #29223b;
+  color: #eee9fa;
+  padding: 34px 22px;
+}
+
+.footer-inner {
+  max-width: 1120px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-note {
+  color: #c8bfd9;
+  font-size: .88rem;
+}
+
+.footer-links a {
+  color: #e2d6ff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .category-grid,
+  .article-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+  .nav-wrap {
+    padding: 12px 16px;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 18px;
+  }
+
+  .section,
+  .articles-inner {
+    padding: 52px 18px;
+  }
+
+  .category-grid,
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge {
+    margin: 50px auto;
+    padding: 0 18px;
+  }
+
+  .challenge-box {
+    padding: 25px 21px;
+  }
+
+  footer a {
+    margin: 0 12px 0 0;
+  }
+
+  .footer-inner {
+    display: block;
+  }
+
+  .footer-links {
+    margin-top: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span aria-hidden="true">🌱</span>BrainBloom
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="#articles">Articles</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">A little curiosity goes a long way</div>
+
+      <h1>Think. Discover. Grow.</h1>
+
+      <p>
+        Welcome to BrainBloom — a place for curious minds.
+        Explore fascinating science, useful student-life ideas,
+        surprising facts and explanations of the world around us.
+      </p>
+
+      <a class="primary-btn" href="#explore">
+        Start Exploring →
+      </a>
+    </div>
+  </section>
+
+  <!-- EXPLORE SECTION -->
+
+  <section class="section" id="explore">
+
+    <div class="section-heading">
+      <div class="eyebrow">Explore your curiosity</div>
+      <h2>What would you like to discover?</h2>
+      <p>Choose a topic and let your curiosity lead the way.</p>
+    </div>
+
+    <div class="category-grid">
+
+      <article class="category-card">
+        <span class="category-icon" aria-hidden="true">🧠</span>
+        <h3>The Curious Mind</h3>
+        <p>Discover how our bodies and minds work.</p>
+      </article>
+
+      <article class="category-card">
+        <span class="category-icon" aria-hidden="true">⏰</span>
+        <h3>TeenLife 101</h3>
+        <p>Simple ideas for learning and everyday student life.</p>
+      </article>
+
+      <article class="category-card">
+        <span class="category-icon" aria-hidden="true">🔎</span>
+        <h3>Fact or Fiction?</h3>
+        <p>Separate popular myths from scientific facts.</p>
+      </article>
+
+      <article class="category-card">
+        <span class="category-icon" aria-hidden="true">🌍</span>
+        <h3>The World Explained</h3>
+        <p>Understand the planet and the universe around us.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ARTICLES SECTION -->
+
+  <section class="articles-section" id="articles">
+
+    <div class="articles-inner">
+
+      <div class="section-heading">
+        <div class="eyebrow">Read something interesting</div>
+        <h2>Discover Something New 📚</h2>
+        <p>Search the BrainBloom library and choose an article to read.</p>
+      </div>
+
+      <div class="search-area">
+        <label for="articleSearch" class="skip-link">Search articles</label>
+
+        <input
+          id="articleSearch"
+          type="search"
+          placeholder="Search articles..."
+          autocomplete="off"
+        >
+
+        <button
+          class="secondary-btn"
+          type="button"
+          id="clearSearch"
+        >
+          Clear Search
+        </button>
+      </div>
+
+      <p class="result-count" id="articleCount" aria-live="polite">
+        Showing 4 articles
+      </p>
+
+      <div class="article-grid" id="articleGrid">
+
+        <article
+          class="article-card"
+          data-search="hiccups diaphragm science curious mind body"
+        >
+          <span class="article-badge">THE CURIOUS MIND</span>
+          <h3>Why Do We Get Hiccups?</h3>
+          <p>
+            Find out what causes hiccups and why your diaphragm
+            suddenly contracts.
+          </p>
+          <a class="read-link" href="articles/why-do-we-get-hiccups.html">
+            Read Article →
+          </a>
+        </article>
+
+        <article
+          class="article-card"
+          data-search="time management student productivity teenlife study planning"
+        >
+          <span class="article-badge">TEENLIFE 101</span>
+          <h3>How to Manage Your Time</h3>
+          <p>
+            Explore practical ways to plan your day, set goals
+            and reduce distractions.
+          </p>
+          <a class="read-link" href="articles/how-to-manage-your-time.html">
+            Read Article →
+          </a>
+        </article>
+
+        <article
+          class="article-card"
+          data-search="brain myth 10 percent fact fiction science neurons"
+        >
+          <span class="article-badge">FACT OR FICTION?</span>
+          <h3>Do We Use Only 10% of Our Brain?</h3>
+          <p>
+            Examine a famous brain myth and learn what scientists know.
+          </p>
+          <a class="read-link" href="articles/do-we-use-only-10-percent-of-our-brain.html">
+            Read Article →
+          </a>
+        </article>
+
+        <article
+          class="article-card"
+          data-search="earth seasons tilt revolution world explained summer winter spring autumn"
+        >
+          <span class="article-badge">THE WORLD EXPLAINED</span>
+          <h3>Why Does Earth Have Seasons?</h3>
+          <p>
+            Discover how Earth's tilted axis causes seasonal changes.
+          </p>
+          <a class="read-link" href="articles/why-does-earth-have-seasons.html">
+            Read Article →
+          </a>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults" hidden>
+        No articles found. Try a different word or clear your search.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- DAILY CHALLENGE -->
+
+  <section class="challenge" aria-labelledby="challengeTitle">
+
+    <div class="challenge-box">
+
+      <div class="eyebrow" style="color:#e5dcff">
+        BrainBloom mini challenge
+      </div>
+
+      <h2 id="challengeTitle">
+        Daily Knowledge Challenge ✨
+      </h2>
+
+      <p>
+        Which planet is commonly known as the Red Planet?
+      </p>
+
+      <button
+        class="secondary-btn"
+        type="button"
+        id="answerButton"
+        aria-expanded="false"
+        aria-controls="answer"
+      >
+        Reveal Answer
+      </button>
+
+      <p class="answer" id="answer" hidden>
+        The answer is <strong>Mars</strong>!
+        Its surface looks reddish because of iron-rich dust and rocks.
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-inner">
+
+    <div>
+      <a
+        class="brand"
+        href="index.html"
+        style="color:white;margin:0"
+      >
+        🌱 BrainBloom
+      </a>
+
+      <p class="footer-note">
+        Think. Discover. Grow. · Made for curious minds.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="#articles">Articles</a>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+
+/* ARTICLE SEARCH */
+
+const searchInput = document.getElementById("articleSearch");
+
+const articleCards = Array.from(
+  document.querySelectorAll(".article-card")
+);
+
+const countText = document.getElementById("articleCount");
+
+const noResults = document.getElementById("noResults");
+
+
+function searchArticles() {
+
+  const query = searchInput.value.trim().toLowerCase();
+
+  let visibleCount = 0;
+
+  articleCards.forEach(card => {
+
+    const searchableText =
+      (card.innerText + " " + card.dataset.search).toLowerCase();
+
+    const matches = searchableText.includes(query);
+
+    card.hidden = !matches;
+
+    if (matches) {
+      visibleCount++;
+    }
+
+  });
+
+  countText.textContent =
+    `Showing ${visibleCount} of ${articleCards.length} articles`;
+
+  noResults.hidden = visibleCount !== 0;
+
+}
+
+
+/* SEARCH AS THE VISITOR TYPES */
+
+searchInput.addEventListener("input", searchArticles);
+
+
+/* CLEAR SEARCH BUTTON */
+
+document.getElementById("clearSearch").addEventListener("click", () => {
+
+  searchInput.value = "";
+
+  searchArticles();
+
+  searchInput.focus();
+
+});
+
+
+/* DAILY CHALLENGE ANSWER */
+
+const answerButton = document.getElementById("answerButton");
+
+const answer = document.getElementById("answer");
+
+
+answerButton.addEventListener("click", () => {
+
+  const willShow = answer.hidden;
+
+  answer.hidden = !willShow;
+
+  answerButton.textContent =
+    willShow ? "Hide Answer" : "Reveal Answer";
+
+  answerButton.setAttribute(
+    "aria-expanded",
+    String(willShow)
+  );
+
+});
+
+</script>
+
+</body>
+  </html>
