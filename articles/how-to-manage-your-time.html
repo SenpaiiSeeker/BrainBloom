@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Practical student-friendly ideas for planning your day, setting goals and managing distractions.">
+<meta name="theme-color" content="#7657c9">
+<title>How to Manage Your Time | BrainBloom</title>
+
+<style>
+:root {
+  --purple: #7657c9;
+  --dark: #563b9b;
+  --ink: #302a40;
+  --muted: #686477;
+  --background: #f8f7fc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+a { color: var(--dark); }
+
+:focus-visible {
+  outline: 3px solid #f0a84b;
+  outline-offset: 3px;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #e8e3f2;
+  padding: 16px 22px;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: .88rem;
+  color: var(--muted);
+}
+
+main {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 0 20px 55px;
+}
+
+.back {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.article-head {
+  background: linear-gradient(135deg,#eee8ff,#fff);
+  padding: 32px;
+  border-radius: 22px;
+  margin-bottom: 25px;
+}
+
+.category {
+  font-size: .76rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: clamp(2rem,5vw,3rem);
+  line-height: 1.15;
+  color: #35294e;
+  margin: 10px 0;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: #625b70;
+  max-width: 730px;
+}
+
+.illustration {
+  display: block;
+  width: min(100%,440px);
+  height: auto;
+  margin: 20px auto 0;
+}
+
+.content-card,
+.fact-card {
+  background: white;
+  border: 1px solid #e8e3f2;
+  border-radius: 17px;
+  padding: 25px;
+  margin: 18px 0;
+  box-shadow: 0 8px 24px rgba(54,37,94,.05);
+}
+
+h2 {
+  font-size: 1.35rem;
+  color: var(--dark);
+  margin-bottom: 9px;
+}
+
+.content-card p,
+.fact-card p {
+  color: #514b61;
+  margin-bottom: 9px;
+}
+
+ul {
+  padding-left: 23px;
+  margin-top: 8px;
+  color: #514b61;
+}
+
+li { margin: 5px 0; }
+
+.fact-card {
+  background: #f0ebfb;
+  border-color: #e2d8f7;
+}
+
+.fact-card h2 { color: #4f398d; }
+
+.learn {
+  border-left: 4px solid var(--purple);
+  padding: 5px 0 5px 18px;
+  margin-top: 25px;
+}
+
+.related {
+  margin-top: 30px;
+  padding: 22px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e8e3f2;
+}
+
+.related h2 { font-size: 1.15rem; }
+
+.related a {
+  display: block;
+  margin-top: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #cfc5e0;
+  background: #29223b;
+  font-size: .9rem;
+}
+
+@media(max-width:560px) {
+  header { padding: 14px 17px; }
+  .header-inner { display: block; }
+  .tagline { margin-top: 3px; }
+  main { margin-top: 22px; padding: 0 15px 40px; }
+  .article-head,
+  .content-card,
+  .fact-card { padding: 21px; }
+  .content-card,
+  .fact-card { margin: 14px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">🌱 BrainBloom</a>
+    <p class="tagline">Think. Discover. Grow.</p>
+  </div>
+</header>
+
+<main>
+
+<a class="back" href="../index.html">← Back to Home</a>
+
+<article>
+
+  <div class="article-head">
+
+    <div class="category">
+      TEENLIFE 101 · PRODUCTIVITY
+    </div>
+
+    <h1>How to Manage Your Time</h1>
+
+    <p class="intro">
+      Schoolwork, hobbies, family time and rest can make
+      a day feel busy. Time management is about making
+      a realistic plan so that important things get
+      enough attention.
+    </p>
+
+    <!-- CLOCK AND PLANNER ILLUSTRATION -->
+
+    <svg
+      class="illustration"
+      viewBox="0 0 440 220"
+      role="img"
+      aria-labelledby="clockTitle clockDesc"
+    >
+
+      <title id="clockTitle">
+        Illustration of a clock and daily planner
+      </title>
+
+      <desc id="clockDesc">
+        A lavender clock beside a simple checklist
+        representing a planned day.
+      </desc>
+
+      <rect
+        x="15" y="25"
+        width="410" height="175"
+        rx="25"
+        fill="#f7f2ff"
+      />
+
+      <circle
+        cx="130" cy="112"
+        r="69"
+        fill="#fff"
+        stroke="#7657c9"
+        stroke-width="8"
+      />
+
+      <circle cx="130" cy="112" r="5" fill="#563b9b"/>
+
+      <path
+        d="M130 112 L130 65 M130 112 L166 130"
+        stroke="#563b9b"
+        stroke-width="7"
+        stroke-linecap="round"
+      />
+
+      <g fill="#7657c9">
+        <circle cx="130" cy="52" r="3"/>
+        <circle cx="190" cy="112" r="3"/>
+        <circle cx="130" cy="172" r="3"/>
+        <circle cx="70" cy="112" r="3"/>
+      </g>
+
+      <rect
+        x="235" y="54"
+        width="145" height="118"
+        rx="13"
+        fill="#fff"
+        stroke="#d8cdf4"
+        stroke-width="3"
+      />
+
+      <path
+        d="M255 83 l7 7 12 -14
+           M255 115 l7 7 12 -14
+           M255 147 l7 7 12 -14"
+        fill="none"
+        stroke="#6eae91"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+
+      <path
+        d="M286 84 H357 M286 116 H357 M286 148 H357"
+        stroke="#b7acd0"
+        stroke-width="5"
+        stroke-linecap="round"
+      />
+
+    </svg>
+
+  </div>
+
+  <section class="content-card">
+
+    <h2>1. Why Is Time Management Important?</h2>
+
+    <p>
+      Planning your time can help you remember tasks,
+      avoid last-minute rushing and make room for breaks.
+      It does not mean filling every minute with work.
+      Rest and free time are important too.
+    </p>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>2. Make a Daily To-Do List</h2>
+
+    <p>Write down the tasks you need to complete. Then:</p>
+
+    <ul>
+      <li>Put the most important or time-sensitive tasks near the top.</li>
+      <li>Break a large assignment into smaller steps.</li>
+      <li>Estimate how long each task may take.</li>
+      <li>Leave some flexible time in case something takes longer than expected.</li>
+    </ul>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>3. Reduce Distractions</h2>
+
+    <p>
+      Try making your study environment easier to focus in:
+    </p>
+
+    <ul>
+      <li>Keep only the books and materials needed for the current task nearby.</li>
+      <li>Silence non-essential notifications during a study session.</li>
+      <li>Take a short break between focused work periods.</li>
+      <li>If a thought or task distracts you, write it down to return to later.</li>
+    </ul>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>4. Set Realistic Goals</h2>
+
+    <p>
+      Choose goals that are clear and manageable.
+      Instead of writing "study science", try
+      "revise the sound chapter and solve five questions".
+    </p>
+
+    <p>
+      Adjust your plan when necessary; a timetable
+      should support you, not make you feel pressured.
+    </p>
+
+  </section>
+
+  <aside class="fact-card">
+
+    <h2>💡 Did You Know?</h2>
+
+    <p>
+      Writing a task down can make it easier to remember
+      and decide when to do it. A simple paper checklist
+      can be useful — you do not need a complicated app.
+    </p>
+
+  </aside>
+
+  <section class="learn">
+
+    <h2>What Did We Learn?</h2>
+
+    <p>
+      Good time management comes from planning,
+      choosing priorities, reducing distractions
+      and setting realistic goals. Remember to
+      include rest in your schedule.
+    </p>
+
+  </section>
+
+</article>
+
+<nav class="related" aria-label="Related articles">
+
+  <h2>Keep exploring</h2>
+
+  <a href="why-do-we-get-hiccups.html">
+    Why Do We Get Hiccups? →
+  </a>
+
+  <a href="why-does-earth-have-seasons.html">
+    Why Does Earth Have Seasons? →
+  </a>
+
+</nav>
+
+</main>
+
+<footer>
+  © 2026 BrainBloom · Think. Discover. Grow.
+</footer>
+
+</body>
+        </html>
