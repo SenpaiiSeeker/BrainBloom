@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn how Earth's tilted axis and yearly journey around the Sun cause the seasons.">
+<meta name="theme-color" content="#7657c9">
+<title>Why Does Earth Have Seasons? | BrainBloom</title>
+
+<style>
+:root {
+  --purple: #7657c9;
+  --dark: #563b9b;
+  --ink: #302a40;
+  --muted: #686477;
+  --background: #f8f7fc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+a { color: var(--dark); }
+
+:focus-visible {
+  outline: 3px solid #f0a84b;
+  outline-offset: 3px;
+}
+
+header {
+  background: #6046a8;
+  padding: 17px 22px;
+  color: white;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: white;
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: .88rem;
+  color: #eee8ff;
+}
+
+main {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 0 20px 55px;
+}
+
+.back {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.article-head {
+  background: linear-gradient(135deg,#eee8ff,#fff);
+  padding: 32px;
+  border-radius: 22px;
+  margin-bottom: 25px;
+}
+
+.category {
+  font-size: .76rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: clamp(2rem,5vw,3rem);
+  line-height: 1.15;
+  color: #35294e;
+  margin: 10px 0;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: #625b70;
+  max-width: 730px;
+}
+
+.illustration {
+  display: block;
+  width: min(100%,600px);
+  height: auto;
+  margin: 22px auto 0;
+}
+
+.content-card,
+.fact-card {
+  background: white;
+  border: 1px solid #e8e3f2;
+  border-radius: 17px;
+  padding: 25px;
+  margin: 18px 0;
+  box-shadow: 0 8px 24px rgba(54,37,94,.05);
+}
+
+h2 {
+  font-size: 1.35rem;
+  color: var(--dark);
+  margin-bottom: 9px;
+}
+
+.content-card p,
+.fact-card p {
+  color: #514b61;
+  margin-bottom: 9px;
+}
+
+ul {
+  padding-left: 23px;
+  margin-top: 8px;
+  color: #514b61;
+}
+
+li { margin: 5px 0; }
+
+.fact-card {
+  background: #f0ebfb;
+  border-color: #e2d8f7;
+}
+
+.fact-card h2 { color: #4f398d; }
+
+.learn {
+  border-left: 4px solid var(--purple);
+  padding: 5px 0 5px 18px;
+  margin-top: 25px;
+}
+
+.related {
+  margin-top: 30px;
+  padding: 22px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e8e3f2;
+}
+
+.related h2 { font-size: 1.15rem; }
+
+.related a {
+  display: block;
+  margin-top: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #cfc5e0;
+  background: #29223b;
+  font-size: .9rem;
+}
+
+@media(max-width:560px) {
+  header { padding: 14px 17px; }
+  .header-inner { display: block; }
+  .tagline { margin-top: 3px; }
+  main { margin-top: 22px; padding: 0 15px 40px; }
+  .article-head,
+  .content-card,
+  .fact-card { padding: 21px; }
+  .content-card,
+  .fact-card { margin: 14px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">🌱 BrainBloom</a>
+    <p class="tagline">Think. Discover. Grow.</p>
+  </div>
+</header>
+
+<main>
+
+<a class="back" href="../index.html">← Back to Home</a>
+
+<article>
+
+  <div class="article-head">
+
+    <div class="category">
+      THE WORLD EXPLAINED · EARTH SCIENCE
+    </div>
+
+    <h1>Why Does Earth Have Seasons?</h1>
+
+    <p class="intro">
+      During the year, many places experience changes
+      in temperature and daylight. These seasonal changes
+      happen mainly because Earth's axis is tilted as
+      our planet travels around the Sun.
+    </p>
+
+    <!-- EARTH ORBIT ILLUSTRATION -->
+
+    <svg
+      class="illustration"
+      viewBox="0 0 600 270"
+      role="img"
+      aria-labelledby="orbitTitle orbitDesc"
+    >
+
+      <title id="orbitTitle">
+        Earth's tilted axis as it orbits the Sun
+      </title>
+
+      <desc id="orbitDesc">
+        A diagram showing the Sun near the centre and Earth
+        at two positions on its orbit. Earth's axis is tilted
+        in the same direction at both positions.
+      </desc>
+
+      <ellipse
+        cx="300" cy="137"
+        rx="205" ry="91"
+        fill="none"
+        stroke="#c8b9ec"
+        stroke-width="3"
+        stroke-dasharray="8 7"
+      />
+
+      <!-- SUN -->
+
+      <circle
+        cx="300" cy="137"
+        r="42"
+        fill="#ffd66e"
+        stroke="#e8a936"
+        stroke-width="3"
+      />
+
+      <g
+        stroke="#e8a936"
+        stroke-width="4"
+        stroke-linecap="round"
+      >
+        <path d="M300 79 V63"/>
+        <path d="M300 211 V195"/>
+        <path d="M242 137 H226"/>
+        <path d="M374 137 H358"/>
+        <path d="M259 96 L247 84"/>
+        <path d="M353 190 L341 178"/>
+        <path d="M341 96 L353 84"/>
+        <path d="M247 190 L259 178"/>
+      </g>
+
+      <!-- FIRST EARTH -->
+
+      <circle
+        cx="105" cy="137"
+        r="28"
+        fill="#72b9e8"
+        stroke="#397cae"
+        stroke-width="3"
+      />
+
+      <path
+        d="M91 119 Q109 111 119 125
+           Q126 140 111 150 Q96 151 88 138Z"
+        fill="#69a879"
+      />
+
+      <path
+        d="M91 137 L121 105"
+        stroke="#563b9b"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+
+      <path
+        d="M83 129 L99 145"
+        stroke="#563b9b"
+        stroke-width="2"
+      />
+
+      <!-- SECOND EARTH -->
+
+      <circle
+        cx="495" cy="137"
+        r="28"
+        fill="#72b9e8"
+        stroke="#397cae"
+        stroke-width="3"
+      />
+
+      <path
+        d="M481 119 Q499 111 509 125
+           Q516 140 501 150 Q486 151 478 138Z"
+        fill="#69a879"
+      />
+
+      <path
+        d="M481 137 L511 105"
+        stroke="#563b9b"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+
+      <path
+        d="M473 129 L489 145"
+        stroke="#563b9b"
+        stroke-width="2"
+      />
+
+      <text
+        x="300" y="25"
+        text-anchor="middle"
+        font-size="15"
+        fill="#563b9b"
+        font-weight="bold"
+      >
+        The Sun
+      </text>
+
+      <text
+        x="105" y="190"
+        text-anchor="middle"
+        font-size="14"
+        fill="#563b9b"
+        font-weight="bold"
+      >
+        Earth
+      </text>
+
+      <text
+        x="495" y="190"
+        text-anchor="middle"
+        font-size="14"
+        fill="#563b9b"
+        font-weight="bold"
+      >
+        Earth
+      </text>
+
+      <text
+        x="300" y="252"
+        text-anchor="middle"
+        font-size="13"
+        fill="#6b627d"
+      >
+        Diagram is simplified and not to scale
+      </text>
+
+    </svg>
+
+  </div>
+
+  <section class="content-card">
+
+    <h2>1. What Causes Seasons?</h2>
+
+    <p>
+      Earth's axis is tilted by about <strong>23.5°</strong>
+      from the perpendicular to its orbital plane.
+    </p>
+
+    <p>
+      As Earth completes one revolution around the Sun
+      in about a year, the axis keeps pointing in nearly
+      the same direction in space.
+    </p>
+
+    <p>
+      This means each hemisphere takes turns leaning
+      towards or away from the Sun.
+    </p>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>2. How Does Earth's Tilt Affect Seasons?</h2>
+
+    <p>
+      When a hemisphere is tilted towards the Sun,
+      it receives more direct sunlight and has longer days.
+      It experiences summer.
+    </p>
+
+    <p>
+      At the same time, the opposite hemisphere is tilted
+      away, receives less direct sunlight and has shorter
+      days, so it experiences winter.
+    </p>
+
+    <p>
+      About six months later, the situation is reversed.
+      Seasons are <strong>not mainly caused by Earth's
+      changing distance from the Sun</strong>.
+    </p>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>3. What Are the Four Seasons?</h2>
+
+    <ul>
+
+      <li>
+        <strong>Spring:</strong>
+        A transition period when temperatures generally
+        become milder.
+      </li>
+
+      <li>
+        <strong>Summer:</strong>
+        The season with longer daylight and more direct
+        sunlight in that hemisphere.
+      </li>
+
+      <li>
+        <strong>Autumn (Fall):</strong>
+        A transition period when daylight generally
+        becomes shorter.
+      </li>
+
+      <li>
+        <strong>Winter:</strong>
+        The season with shorter daylight and less direct
+        sunlight in that hemisphere.
+      </li>
+
+    </ul>
+
+    <p>
+      These four-season descriptions are most familiar
+      in many temperate regions. Some parts of the world,
+      including much of India, commonly describe seasons
+      using local climate patterns such as summer,
+      monsoon and winter.
+    </p>
+
+  </section>
+
+  <aside class="fact-card">
+
+    <h2>💡 Did You Know?</h2>
+
+    <p>
+      Earth is actually closest to the Sun in early January
+      and farthest from it in early July.
+    </p>
+
+    <p>
+      This does not cause the seasons: the tilt of Earth's
+      axis is the main reason. When it is winter in the
+      Northern Hemisphere, it is summer in the
+      Southern Hemisphere.
+    </p>
+
+  </aside>
+
+  <section class="learn">
+
+    <h2>What Did We Learn?</h2>
+
+    <p>
+      Earth has seasons because its axis is tilted as it
+      revolves around the Sun. The tilt changes the angle
+      and duration of sunlight received by each hemisphere
+      during the year.
+    </p>
+
+  </section>
+
+</article>
+
+<nav class="related" aria-label="Related articles">
+
+  <h2>Keep exploring</h2>
+
+  <a href="do-we-use-only-10-percent-of-our-brain.html">
+    Do We Use Only 10% of Our Brain? →
+  </a>
+
+  <a href="how-to-manage-your-time.html">
+    How to Manage Your Time →
+  </a>
+
+</nav>
+
+</main>
+
+<footer>
+  © 2026 BrainBloom · Think. Discover. Grow.
+</footer>
+
+</body>
+</html>
