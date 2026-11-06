@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover why the claim that humans use only ten percent of their brains is a myth.">
+<meta name="theme-color" content="#7657c9">
+<title>Do We Use Only 10% of Our Brain? | BrainBloom</title>
+
+<style>
+:root {
+  --purple: #7657c9;
+  --dark: #563b9b;
+  --ink: #302a40;
+  --muted: #686477;
+  --background: #f8f7fc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+a { color: var(--dark); }
+
+:focus-visible {
+  outline: 3px solid #f0a84b;
+  outline-offset: 3px;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #e8e3f2;
+  padding: 16px 22px;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: .88rem;
+  color: var(--muted);
+}
+
+main {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 0 20px 55px;
+}
+
+.back {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.article-head {
+  background: linear-gradient(135deg,#eee8ff,#fff);
+  padding: 32px;
+  border-radius: 22px;
+  margin-bottom: 25px;
+}
+
+.category {
+  font-size: .76rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: clamp(2rem,5vw,3rem);
+  line-height: 1.15;
+  color: #35294e;
+  margin: 10px 0;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: #625b70;
+  max-width: 730px;
+}
+
+.illustration {
+  display: block;
+  width: min(100%,450px);
+  height: auto;
+  margin: 20px auto 0;
+}
+
+.content-card,
+.fact-card {
+  background: white;
+  border: 1px solid #e8e3f2;
+  border-radius: 17px;
+  padding: 25px;
+  margin: 18px 0;
+  box-shadow: 0 8px 24px rgba(54,37,94,.05);
+}
+
+h2 {
+  font-size: 1.35rem;
+  color: var(--dark);
+  margin-bottom: 9px;
+}
+
+.content-card p,
+.fact-card p {
+  color: #514b61;
+  margin-bottom: 9px;
+}
+
+ul {
+  padding-left: 23px;
+  margin-top: 8px;
+  color: #514b61;
+}
+
+li { margin: 5px 0; }
+
+.fact-card {
+  background: #f0ebfb;
+  border-color: #e2d8f7;
+}
+
+.fact-card h2 { color: #4f398d; }
+
+.learn {
+  border-left: 4px solid var(--purple);
+  padding: 5px 0 5px 18px;
+  margin-top: 25px;
+}
+
+.related {
+  margin-top: 30px;
+  padding: 22px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e8e3f2;
+}
+
+.related h2 { font-size: 1.15rem; }
+
+.related a {
+  display: block;
+  margin-top: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #cfc5e0;
+  background: #29223b;
+  font-size: .9rem;
+}
+
+@media(max-width:560px) {
+  header { padding: 14px 17px; }
+  .header-inner { display: block; }
+  .tagline { margin-top: 3px; }
+  main { margin-top: 22px; padding: 0 15px 40px; }
+  .article-head,
+  .content-card,
+  .fact-card { padding: 21px; }
+  .content-card,
+  .fact-card { margin: 14px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">🌱 BrainBloom</a>
+    <p class="tagline">Think. Discover. Grow.</p>
+  </div>
+</header>
+
+<main>
+
+<a class="back" href="../index.html">← Back to Home</a>
+
+<article>
+
+  <div class="article-head">
+
+    <div class="category">
+      FACT OR FICTION? · SCIENCE
+    </div>
+
+    <h1>Do We Use Only 10% of Our Brain?</h1>
+
+    <p class="intro">
+      You may have heard that people use only ten percent
+      of their brains. It sounds mysterious, but is it true?
+      Let's look at what science tells us.
+    </p>
+
+    <!-- BRAIN ILLUSTRATION -->
+
+    <svg
+      class="illustration"
+      viewBox="0 0 450 225"
+      role="img"
+      aria-labelledby="brainTitle brainDesc"
+    >
+
+      <title id="brainTitle">
+        Illustration of a human brain
+      </title>
+
+      <desc id="brainDesc">
+        A friendly stylised pink brain with curved lines
+        representing its folds.
+      </desc>
+
+      <rect
+        x="12" y="15"
+        width="426" height="195"
+        rx="25"
+        fill="#f7f2ff"
+      />
+
+      <path
+        d="M225 57
+        C205 28 162 42 157 72
+        C122 62 101 94 116 122
+        C92 151 118 181 150 174
+        C165 201 204 190 218 171
+        L225 160
+        C239 190 280 201 300 174
+        C332 181 358 151 334 122
+        C349 94 328 62 293 72
+        C288 42 245 28 225 57Z"
+        fill="#f4a9bc"
+        stroke="#c86f91"
+        stroke-width="4"
+      />
+
+      <path
+        d="M225 57
+        C218 84 232 99 225 121
+        C218 144 231 151 225 160
+        M157 72 C181 78 181 101 164 112
+        M116 122 C143 112 158 129 150 151
+        M293 72 C269 78 269 101 286 112
+        M334 122 C307 112 292 129 300 151
+        M190 55 C179 78 199 88 196 103
+        M260 55 C271 78 251 88 254 103"
+        fill="none"
+        stroke="#c86f91"
+        stroke-width="4"
+        stroke-linecap="round"
+      />
+
+      <circle
+        cx="225" cy="112"
+        r="4"
+        fill="#c86f91"
+      />
+
+    </svg>
+
+  </div>
+
+  <section class="content-card">
+
+    <h2>1. The 10% Brain Myth</h2>
+
+    <p>
+      The claim that humans use only ten percent of their
+      brains is a <strong>myth</strong>.
+    </p>
+
+    <p>
+      Brain scans show that many different areas are active
+      as we think, move, remember, sense and carry out
+      everyday activities.
+    </p>
+
+    <p>
+      Not every area is equally active at every moment,
+      but the brain is not mostly unused.
+    </p>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>2. How Does Our Brain Work?</h2>
+
+    <p>
+      The brain has several important parts that work
+      together. At a basic level:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Cerebrum:</strong>
+        involved in thinking, memory, interpreting senses
+        and voluntary actions.
+      </li>
+
+      <li>
+        <strong>Cerebellum:</strong>
+        helps coordinate movement, posture and balance.
+      </li>
+
+      <li>
+        <strong>Brainstem:</strong>
+        helps control essential automatic functions
+        such as breathing and heartbeat.
+      </li>
+    </ul>
+
+    <p>
+      These parts contain networks of nerve cells
+      that communicate with one another.
+    </p>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>3. Why Do People Believe This Myth?</h2>
+
+    <p>
+      It is an easy-to-remember claim that makes the brain
+      sound as if it has a huge hidden reserve.
+    </p>
+
+    <p>
+      However, modern brain-imaging research does not
+      support the idea that ninety percent of the brain
+      is inactive or unnecessary.
+    </p>
+
+  </section>
+
+  <aside class="fact-card">
+
+    <h2>💡 Did You Know?</h2>
+
+    <p>
+      The human brain contains billions of neurons.
+      They communicate through electrical signals
+      and chemical messengers, allowing different
+      brain networks to work together.
+    </p>
+
+  </aside>
+
+  <section class="learn">
+
+    <h2>What Did We Learn?</h2>
+
+    <p>
+      We use many parts of our brain throughout the day.
+      The "only 10%" statement is a popular myth,
+      not a scientific fact.
+    </p>
+
+  </section>
+
+</article>
+
+<nav class="related" aria-label="Related articles">
+
+  <h2>Keep exploring</h2>
+
+  <a href="why-do-we-get-hiccups.html">
+    Why Do We Get Hiccups? →
+  </a>
+
+  <a href="why-does-earth-have-seasons.html">
+    Why Does Earth Have Seasons? →
+  </a>
+
+</nav>
+
+</main>
+
+<footer>
+  © 2026 BrainBloom · Think. Discover. Grow.
+</footer>
+
+</body>
+</html>
