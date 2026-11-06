@@ -1,1 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn why hiccups happen, what can trigger them and how the diaphragm is involved.">
+<meta name="theme-color" content="#7657c9">
+<title>Why Do We Get Hiccups? | BrainBloom</title>
 
+<style>
+:root {
+  --purple: #7657c9;
+  --dark: #563b9b;
+  --lavender: #eee8ff;
+  --ink: #302a40;
+  --muted: #686477;
+  --background: #f8f7fc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--dark);
+}
+
+:focus-visible {
+  outline: 3px solid #f0a84b;
+  outline-offset: 3px;
+}
+
+/* HEADER */
+
+header {
+  background: white;
+  border-bottom: 1px solid #e8e3f2;
+  padding: 16px 22px;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: .88rem;
+  color: var(--muted);
+}
+
+/* ARTICLE */
+
+main {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 0 20px 55px;
+}
+
+.back {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.article-head {
+  background: linear-gradient(135deg,#eee8ff,#fff);
+  padding: 32px;
+  border-radius: 22px;
+  margin-bottom: 25px;
+}
+
+.category {
+  font-size: .76rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: clamp(2rem,5vw,3rem);
+  line-height: 1.15;
+  color: #35294e;
+  margin: 10px 0;
+}
+
+.intro {
+  font-size: 1.08rem;
+  color: #625b70;
+  max-width: 730px;
+}
+
+.illustration {
+  display: block;
+  width: min(100%,520px);
+  height: auto;
+  margin: 22px auto 0;
+}
+
+/* ARTICLE CONTENT */
+
+.content-card,
+.fact-card {
+  background: white;
+  border: 1px solid #e8e3f2;
+  border-radius: 17px;
+  padding: 25px;
+  margin: 18px 0;
+  box-shadow: 0 8px 24px rgba(54,37,94,.05);
+}
+
+h2 {
+  font-size: 1.35rem;
+  color: var(--dark);
+  margin-bottom: 9px;
+}
+
+.content-card p,
+.fact-card p {
+  color: #514b61;
+}
+
+ul {
+  padding-left: 23px;
+  margin-top: 8px;
+  color: #514b61;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.fact-card {
+  background: #f0ebfb;
+  border-color: #e2d8f7;
+}
+
+.fact-card h2 {
+  color: #4f398d;
+}
+
+.learn {
+  border-left: 4px solid var(--purple);
+  padding: 5px 0 5px 18px;
+  margin-top: 25px;
+}
+
+/* RELATED ARTICLES */
+
+.related {
+  margin-top: 30px;
+  padding: 22px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e8e3f2;
+}
+
+.related h2 {
+  font-size: 1.15rem;
+}
+
+.related a {
+  display: block;
+  margin-top: 7px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #cfc5e0;
+  background: #29223b;
+  font-size: .9rem;
+}
+
+/* MOBILE */
+
+@media(max-width:560px) {
+
+  header {
+    padding: 14px 17px;
+  }
+
+  .header-inner {
+    display: block;
+  }
+
+  .tagline {
+    margin-top: 3px;
+  }
+
+  main {
+    margin-top: 22px;
+    padding: 0 15px 40px;
+  }
+
+  .article-head,
+  .content-card,
+  .fact-card {
+    padding: 21px;
+  }
+
+  .content-card,
+  .fact-card {
+    margin: 14px 0;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="../index.html">🌱 BrainBloom</a>
+    <p class="tagline">Think. Discover. Grow.</p>
+  </div>
+</header>
+
+<main>
+
+<a class="back" href="../index.html">← Back to Home</a>
+
+<article>
+
+  <div class="article-head">
+
+    <div class="category">
+      THE CURIOUS MIND · SCIENCE
+    </div>
+
+    <h1>Why Do We Get Hiccups?</h1>
+
+    <p class="intro">
+      Almost everyone gets hiccups from time to time.
+      They can appear suddenly, make a small "hic" sound
+      and then disappear. But what is actually happening
+      inside our body?
+    </p>
+
+    <!-- DIAPHRAGM ILLUSTRATION -->
+
+    <svg
+      class="illustration"
+      viewBox="0 0 520 245"
+      role="img"
+      aria-labelledby="svgTitle svgDesc"
+    >
+
+      <title id="svgTitle">
+        Simple illustration of the diaphragm
+      </title>
+
+      <desc id="svgDesc">
+        A simplified chest and lung illustration showing
+        the curved diaphragm muscle beneath the lungs.
+      </desc>
+
+      <rect
+        x="70" y="18"
+        width="380" height="205"
+        rx="28"
+        fill="#f7f2ff"
+      />
+
+      <path
+        d="M260 40 L260 75"
+        stroke="#7657c9"
+        stroke-width="10"
+        stroke-linecap="round"
+      />
+
+      <path
+        d="M260 72
+        C225 74 190 92 170 122
+        C151 151 160 183 190 185
+        C220 187 241 161 260 143
+        C279 161 300 187 330 185
+        C360 183 369 151 350 122
+        C330 92 295 74 260 72Z"
+        fill="#d9cdf7"
+        stroke="#7657c9"
+        stroke-width="4"
+      />
+
+      <path
+        d="M145 170 Q260 120 375 170"
+        fill="none"
+        stroke="#e58d9c"
+        stroke-width="13"
+        stroke-linecap="round"
+      />
+
+      <path
+        d="M145 170 Q260 210 375 170"
+        fill="none"
+        stroke="#7657c9"
+        stroke-width="3"
+        stroke-dasharray="6 7"
+      />
+
+      <text
+        x="260" y="229"
+        text-anchor="middle"
+        font-size="15"
+        fill="#563b9b"
+        font-weight="bold"
+      >
+        Diaphragm muscle
+      </text>
+
+      <path
+        d="M390 155 L430 135"
+        stroke="#563b9b"
+        stroke-width="2"
+      />
+
+      <text
+        x="434" y="132"
+        font-size="12"
+        fill="#563b9b"
+      >
+        Lungs
+      </text>
+
+    </svg>
+
+  </div>
+
+  <section class="content-card">
+
+    <h2>1. What Causes Hiccups?</h2>
+
+    <p>
+      Hiccups begin when the <strong>diaphragm</strong> —
+      the dome-shaped muscle below the lungs that helps
+      us breathe — suddenly contracts without us choosing
+      to move it.
+    </p>
+
+    <p>
+      Air rushes into the lungs, and the vocal cords
+      briefly close. This closure produces the familiar
+      "hic" sound.
+    </p>
+
+  </section>
+
+  <section class="content-card">
+
+    <h2>2. What Can Trigger Hiccups?</h2>
+
+    <p>
+      Sometimes the nerves that control the diaphragm
+      are irritated. Common triggers include:
+    </p>
+
+    <ul>
+      <li>Eating too quickly or eating a very large meal.</li>
+      <li>Drinking fizzy beverages.</li>
+      <li>Swallowing extra air while eating or drinking.</li>
+      <li>Sudden changes in stomach temperature or excitement.</li>
+    </ul>
+
+  </section>
+
+  <aside class="fact-card">
+
+    <h2>💡 Did You Know?</h2>
+
+    <p>
+      Most short bouts of hiccups are harmless and go away
+      on their own. If hiccups last an unusually long time
+      or interfere with eating, sleeping or breathing,
+      tell a trusted adult and seek medical advice.
+    </p>
+
+  </aside>
+
+  <section class="learn">
+
+    <h2>What Did We Learn?</h2>
+
+    <p>
+      Hiccups happen when the diaphragm contracts
+      involuntarily and the vocal cords close briefly.
+      Several everyday activities can trigger this reflex.
+    </p>
+
+  </section>
+
+</article>
+
+<nav class="related" aria-label="Related articles">
+
+  <h2>Keep exploring</h2>
+
+  <a href="how-to-manage-your-time.html">
+    How to Manage Your Time →
+  </a>
+
+  <a href="do-we-use-only-10-percent-of-our-brain.html">
+    Do We Use Only 10% of Our Brain? →
+  </a>
+
+</nav>
+
+</main>
+
+<footer>
+  © 2026 BrainBloom · Think. Discover. Grow.
+</footer>
+
+</body>
+  </html>
